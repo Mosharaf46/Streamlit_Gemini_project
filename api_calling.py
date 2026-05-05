@@ -39,4 +39,4 @@ def quize_generator(image,difficulty):
     )
     
     return response.text 
-    
+

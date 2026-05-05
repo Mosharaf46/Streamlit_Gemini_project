@@ -16,7 +16,7 @@ def note_generator(images):
               make sure to add necessary markdown to differentiate different section"""
     
     response=client.models.generate_content(
-        model="gemini-3-flash-preview",
+        model="gemini-2.5-flash",
         contents=[images,prompt]
     )
     
@@ -34,7 +34,7 @@ def quize_generator(image,difficulty):
                 add corrrect answer too at the end"""
     
     response=client.models.generate_content(
-        model="gemini-3-flash-preview",
+        model="gemini-2.5-flash",
         contents=[image,prompt]
     )
     
